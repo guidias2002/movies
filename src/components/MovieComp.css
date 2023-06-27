@@ -1,0 +1,26 @@
+.movieComp {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #161616;
+    border-radius: 10px;
+}
+
+.movieComp img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.movieComp a {
+    color: #fff;
+}
+
+.description-movieComp {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+}
+
+.description-movieComp h3 {
+    margin-bottom: 5px;
+}

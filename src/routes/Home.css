@@ -1,0 +1,31 @@
+.container-home {
+    width: 100%;
+}
+
+.container-home .title {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 2rem;
+}
+
+.container-movies {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.header-group {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.erro {
+    color: #f7d354;
+}
+
