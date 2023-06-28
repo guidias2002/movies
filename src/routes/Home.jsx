@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { api_key, api_movies } from 'variaveis';
+import { api_key, api_movies, lang } from 'variaveis';
 import MovieComp from 'components/MovieComp';
 
 import './Home.css'
@@ -18,7 +18,7 @@ export default function Home() {
 
   useEffect(() => {
 
-    const topRatedMovies = `${api_movies}popular?${api_key}`
+    const topRatedMovies = `${api_movies}popular?${lang}&${api_key}`
 
     getTopRatedMovies(topRatedMovies)
   }, [])

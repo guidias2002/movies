@@ -23,6 +23,7 @@
     align-items: center;
     margin: 0 auto;
     margin-bottom: 20px;
+    border-bottom: 1px solid #83838348;
 }
 
 .erro {
