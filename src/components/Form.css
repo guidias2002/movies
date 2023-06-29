@@ -1,26 +1,26 @@
-form {
+.form {
     display: flex;
     gap: .5rem;
-    border: 1px solid #ffffff44;
     padding: 5px;
     border-radius: 4px;
 }
 
-form input {
+.form input {
+    width: 100%;
     outline: none;
-    padding: 0.2rem 0.8rem;
-    border-radius: 4px;
+    padding: 1rem 0.8rem;
+    border-radius: 30px;
     border: none;
 }
 
-form button {
-    background-color: #f7d354;
-    border: 2px solid #f7d354;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: .3rem;
-    font-size: 1.3rem;
+.form button {
     display: flex;
     align-items: center;
+    background-color: #f7d354;
+    border: none;
+    border-radius: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.3rem;
 }

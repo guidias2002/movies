@@ -54,8 +54,8 @@ export default function MoviePage() {
                   <p className='percentage'>{(movie.vote_average * 10).toFixed()}%</p>
                   <p>Avaliação dos usuários</p>
                 </div>
-                <button><FaHeart /></button>
                 <button><FaListUl /></button>
+                <button><FaHeart /></button>
                 <button><FaStar /></button>
               </div>
 

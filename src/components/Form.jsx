@@ -1,7 +1,8 @@
 import { FaSearch } from 'react-icons/fa'
-import './Form.css'
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
+
+import './Form.css'
 
 export default function Form() {
 
@@ -17,7 +18,7 @@ export default function Form() {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className='form' onSubmit={handleSubmit}>
             <input type="text" placeholder='Pesquisar filme' onChange={(e) => setSearch(e.target.value)} value={search} />
             <button type='submit'><FaSearch /></button>
         </form>

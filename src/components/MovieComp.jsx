@@ -3,7 +3,7 @@ import { api_img } from 'variaveis'
 
 import './MovieComp.css'
 
-export default function MovieComp({ movie, showLink = true }) {
+export default function MovieComp({ movie }) {
   return (
     <div className='movieComp'>
       <Link to={`/moviePage/${movie.id}`}>
@@ -13,7 +13,6 @@ export default function MovieComp({ movie, showLink = true }) {
           <p>{movie.release_date}</p>
         </div>
       </Link>
-        {/* {showLink && <Link to={`/moviePage/${movie.id}`}>Detalhes</Link>} */}
     </div>
   )
 }

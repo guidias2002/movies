@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import MovieComp from 'components/MovieComp'
 
+import MovieSearch from 'components/MovieSearch';
 import { api_key, api_search } from 'variaveis';
-import Form from 'components/Form';
-import './Home.css'
+
+import './Search.css'
+import CardSearch from 'components/CardSearch';
+import FormSearch from 'components/FormSearch';
+
 
 export default function Search() {
 
@@ -22,22 +25,24 @@ export default function Search() {
 
   useEffect(() => {
 
-    const searchWithQuety = `${api_search}?${api_key}&query=${query}`
+    const searchWithQuery = `${api_search}?${api_key}&query=${query}`
 
-    getSearchedMovies(searchWithQuety)
+    getSearchedMovies(searchWithQuery)
   }, [query])
 
+
   return (
-    <div className='container-home'>
-      <div className='header-group'>
-      <h2 className='title'>Resultados: {query}</h2>
-        <Form/>
-      </div>
-      <div className='container-movies'>
-        {movies == 0 && (<h3 className='erro'>Nenhum filme encontrado</h3>)}
-        {movies.length > 0 && movies.map((movie) =>
-          <MovieComp key={movie.id} movie={movie} />
-        )}
+    <div className='container-search'>
+        <FormSearch  movie={movies}/>
+
+      <div className='group-search'>
+        <CardSearch />
+        <div className='container-moviesSearch'>
+          {movies == 0 && (<h3 className='erro'>Nenhum filme encontrado</h3>)}
+          {movies.length > 0 && movies.map((movie) =>
+            <MovieSearch key={movie.id} movie={movie} />
+          )}
+        </div>
       </div>
     </div>
   )

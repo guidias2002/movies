@@ -1,0 +1,14 @@
+.form-search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #00000049;
+    margin-bottom: 20px;
+}
+
+.form-search input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}

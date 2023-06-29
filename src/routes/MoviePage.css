@@ -1,3 +1,12 @@
+.container-moviePage-info img {
+    width: 320px;
+    border-radius: 10px;
+}
+
+.container-description h2, .container-description p {
+    color: #fff;
+}
+
 .container-moviePage {
     width: 100%;
     position: relative;
@@ -29,11 +38,6 @@
     gap: 10px;
 }
 
-img {
-    width: 320px;
-    border-radius: 10px;
-}
-
 .group-description-movie {
     display: flex;
     gap: 5px;
@@ -48,11 +52,15 @@ img {
 .options-button button {
     display: flex;
     align-items: center;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 15px;
+    border-radius: 30px;
     border: none;
     cursor: pointer;
+    background-color: #032541;
+    color: #fff;
+    font-size: 0.8rem;
 }
+
 
 .avaliation {
     display: flex;
@@ -61,7 +69,7 @@ img {
 
 .percentage {
     padding: 10px;
-    background-color: #fff;
+    background-color: #032541;
     color: #000;
     border-radius: 20px;
 }

@@ -4,6 +4,7 @@ import MovieComp from 'components/MovieComp';
 
 import './Home.css'
 import Form from 'components/Form';
+import Banner from 'components/Banner';
 
 export default function Home() {
 
@@ -24,17 +25,19 @@ export default function Home() {
   }, [])
 
   return (
-    <div className='container-home'>
-      <div className='header-group'>
-        <h2 className='title'>Filmes Populares</h2>
-        <Form/>
+    <>
+      <Banner/>
+      <div className='container-home'>
+        <div className='header-group'>
+          <h2 className='title'>Filmes Populares</h2>
+        </div>
+        <div className='container-movies'>
+          {bestMovies.length > 0 && bestMovies.map((movie) =>
+            <MovieComp key={movie.id} movie={movie}/>
+            )}
+        </div>
       </div>
-      <div className='container-movies'>
-        {bestMovies.length > 0 && bestMovies.map((movie) =>
-          <MovieComp key={movie.id} movie={movie}/>
-        )}
-      </div>
-    </div>
+    </>
   )
 
 }
