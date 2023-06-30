@@ -32,7 +32,7 @@ export default function Artist() {
         <ul className='listArtists'>
             {artists.map((artist) => {
                 return (
-                    <CardArtist artist={artist}/>
+                    <CardArtist key={artist.id} artist={artist}/>
                 )
             })}
         </ul>

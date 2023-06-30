@@ -1,0 +1,25 @@
+.sectionFooter {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    background-color: #032541;
+}
+
+.containerFooter {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.liTitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.liChild {
+    margin-bottom: 3px;
+}

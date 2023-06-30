@@ -1,0 +1,15 @@
+.listInfo {
+    width: 100%;
+}
+
+.listInfo li {
+    margin-bottom: 15px;
+}
+
+.originalTitle {
+    font-weight: bold;
+}
+
+.infosCard {
+    font-size: 0.9rem;
+}

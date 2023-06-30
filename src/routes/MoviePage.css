@@ -1,5 +1,6 @@
 .mainMoviePage {
     width: 100%;
+    padding-bottom: 40px;
 }
 
 .container-moviePage-info img {
@@ -18,7 +19,6 @@
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 20px;
 }
 
 .container-moviePage-info {
@@ -83,11 +83,26 @@
     border-radius: 20px;
 }
 
-.sectionCast {
+.sectionCast, .sectionTrailer {
     width: 70%;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
+    border-bottom: 1px solid #49494938;
+    padding-bottom: 20px;
 }
 
-.sectionCast h2 {
+.sectionProd {
+    width: 70%;
+    margin: 20px auto 20px auto;
+}
+
+.sectionCast-info {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.title-sections {
+    display: inline-block;
     margin-bottom: 20px;
 }
+

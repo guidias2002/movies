@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
-import { api_key, api_movies, api_img, lang, api_img_large, url_yt, api_trailer } from 'variaveis';
+import { api_key, api_movies, api_img, lang, api_img_large } from 'variaveis';
 
 import './MoviePage.css'
 import { FaHeart, FaListUl, FaStar } from "react-icons/fa";
 import Trailer from 'components/Trailer';
 import Artist from 'components/Artist';
+import CardInfo from 'components/CardInfo';
+import ProdCompanies from 'components/ProdCompanies';
 
 export default function MoviePage() {
 
@@ -73,11 +75,22 @@ export default function MoviePage() {
       </section>
       
       <section className='sectionCast'>
-        <h2>Elenco principal</h2>
-        <Artist />
+        <h2 className='title-sections'>Elenco principal</h2>
+        <div className='sectionCast-info'>
+          <Artist />
+          <CardInfo/>
+        </div>
       </section>
       
-     {/*  <Trailer /> */}
+      <section className='sectionTrailer'>
+        <h2 className='title-sections'>Trailer</h2>
+        <Trailer />
+      </section>
+
+      <section className='sectionProd'>
+        <h2 className='title-sections'>Produção </h2>
+        <ProdCompanies/>
+      </section>
     </main>
   )
 }
