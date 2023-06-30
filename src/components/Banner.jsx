@@ -5,7 +5,7 @@ import './Banner.css'
 
 export default function Banner() {
   return (
-    <section>
+    <section className='sectionBanner'>
         <div className='container-banner'>
             <h1>Bem vindo(a).</h1>
             <h2>Milhões de filmes. Explore já.</h2>

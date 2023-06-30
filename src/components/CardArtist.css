@@ -1,0 +1,24 @@
+.cardArtist {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #4e4e4e36;
+    border-radius: 10px;
+}
+
+.cardArtist img {
+    border-radius: 10px 10px 0 0;
+}
+
+.cardArtist-description {
+    padding: 15px 10px 5px 10px;
+}
+
+.originalName {
+    font-weight: bold;
+}
+
+.character {
+    font-size: 0.9rem;
+}
+

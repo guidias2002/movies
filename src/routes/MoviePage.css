@@ -1,15 +1,24 @@
+.mainMoviePage {
+    width: 100%;
+}
+
 .container-moviePage-info img {
     width: 320px;
     border-radius: 10px;
 }
 
-.container-description h2, .container-description p {
+.container-description h2,
+.container-description p {
     color: #fff;
 }
 
 .container-moviePage {
     width: 100%;
-    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
 }
 
 .container-moviePage-info {
@@ -72,4 +81,13 @@
     background-color: #032541;
     color: #000;
     border-radius: 20px;
+}
+
+.sectionCast {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.sectionCast h2 {
+    margin-bottom: 20px;
 }
