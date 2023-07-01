@@ -1,0 +1,72 @@
+.section-MoviePage {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+}
+
+.container-moviePage-info {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+
+.container-moviePage-info img {
+    width: 320px;
+    border-radius: 10px;
+}
+
+.container-description h2,
+.container-description p {
+    color: #fff;
+}
+
+.container-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.title-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.options-button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.options-button button {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #032541;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.tagline-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tagline {
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 1.2rem;
+}
+
+.group-description-movie {
+    display: flex;
+    gap: 5px;
+}
+
