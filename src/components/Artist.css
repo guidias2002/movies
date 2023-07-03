@@ -1,6 +1,36 @@
 .listArtists {
-    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(6, 150px);
+    gap: 10px;
+}
+
+@media (max-width: 1200px) {
+    .listArtists {
+        grid-template-columns: repeat(6, 150px);
+    }
+}
+
+@media (max-width: 1080px) {
+    .listArtists {
+        width: 100%;
+        grid-template-columns: repeat(3, 250px);
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 880px) {
+    .listArtists {
+        width: 100%;
+        grid-template-columns: repeat(3, 200px);
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 700px) {
+    .listArtists {
+        width: 100%;
+        grid-template-columns: repeat(2, 200px);
+        justify-content: center;
+        gap: 20px;
+    }
 }

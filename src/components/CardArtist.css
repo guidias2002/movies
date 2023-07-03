@@ -1,5 +1,5 @@
 .cardArtist {
-    width: 160px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     border: 1px solid #4e4e4e36;
@@ -7,6 +7,8 @@
 }
 
 .cardArtist img {
+    width: 150px;
+    height: 200px;
     border-radius: 10px 10px 0 0;
 }
 
@@ -22,3 +24,25 @@
     font-size: 0.9rem;
 }
 
+
+@media (max-width: 1080px) {
+    .cardArtist {
+        width: 250px;
+    }
+
+    .cardArtist img {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 880px) {
+    .cardArtist {
+        width: 200px;
+    }
+
+    .cardArtist img {
+        width: 200px;
+        height: 250px;
+    }
+}

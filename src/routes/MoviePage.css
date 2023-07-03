@@ -3,11 +3,6 @@
     padding-bottom: 40px;
 }
 
-.percentage {
-    background-color: #032541;
-    font-weight: bold;
-}
-
 .sectionCast, .sectionTrailer {
     width: 70%;
     display: flex;
@@ -29,9 +24,24 @@
     margin: 20px auto 20px auto;
 }
 
-
 .title-sections {
     display: inline-block;
     margin-bottom: 20px;
+}
+
+@media (max-width: 1480px) and (min-width: 1200px) {
+    .sectionCast, .sectionTrailer, .sectionProd {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sectionCast, .sectionTrailer, .sectionProd {
+        width: 90%;
+    }
+
+    .sectionCast-info {
+        flex-wrap: wrap;
+    } 
 }
 
