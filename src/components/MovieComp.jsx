@@ -14,7 +14,6 @@ export default function MovieComp({ movie }) {
         <div className='description-movieComp'>
           <h3>{movie.title}</h3>
           <p>{movie.release_date}</p>
-          <p>{movie.id}</p>
         </div>
       </Link>
     </div>

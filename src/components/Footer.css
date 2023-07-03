@@ -4,6 +4,8 @@
     display: flex;
     align-items: center;
     background-color: #032541;
+    position: absolute;
+    bottom: 0;
 }
 
 .containerFooter {

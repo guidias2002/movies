@@ -12,7 +12,7 @@ export default function MovieSearch({ movie }) {
         <div className='description-movieSearch'>
           <h3>{movie.title}</h3>
           <p className='date'>{movie.release_date}</p>
-          <p>{movie.overview}</p>
+          <p className='overviewSearch'>{movie.overview}</p>
         </div>
       </div>
     </Link>

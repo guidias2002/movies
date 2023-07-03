@@ -40,7 +40,7 @@ export default function CardInfo() {
                     </li>
                     <li>
                         <p className='originalTitle'>Orçamento</p>
-                        <p className='infosCard'>{infos.budget}</p>
+                        <p className='infosCard'>{(infos.budget).toLocaleString('pt-BR')}</p>
                     </li>
                 </ul>
             )}

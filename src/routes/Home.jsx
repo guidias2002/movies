@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
       <Banner/>
-      <div className='container-home'>
+      <main className='container-home'>
         <div className='header-group'>
           <h2 className='title'>Tendências</h2>
         </div>
@@ -35,7 +35,7 @@ export default function Home() {
             <MovieComp key={movie.id} movie={movie}/>
             )}
         </div>
-      </div>
+      </main>
     </>
   )
 

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 
 import MovieSearch from 'components/MovieSearch';
-import { api_key, api_search } from 'variaveis';
+import { api_key, api_search, lang } from 'variaveis';
 
 import './Search.css'
 import CardSearch from 'components/CardSearch';
@@ -25,7 +25,7 @@ export default function Search() {
 
   useEffect(() => {
 
-    const searchWithQuery = `${api_search}?${api_key}&query=${query}`
+    const searchWithQuery = `${api_search}?${lang}&${api_key}&query=${query}`
 
     getSearchedMovies(searchWithQuery)
   }, [query])
