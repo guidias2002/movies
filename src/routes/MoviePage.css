@@ -45,3 +45,8 @@
     } 
 }
 
+@media (max-width: 480px) {
+    .mainMoviePage {
+        padding-bottom: 35rem;
+    }
+}

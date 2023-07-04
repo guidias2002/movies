@@ -24,4 +24,10 @@
     margin: 20px auto;
 }
 
+@media (max-width: 480px) {
+    .container-home {
+        padding-bottom: 35rem;
+    }
+}
+
 

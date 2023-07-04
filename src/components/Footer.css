@@ -10,7 +10,8 @@
 
 .containerFooter {
     width: 60%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     margin: 0 auto;
     color: #fff;
@@ -24,4 +25,34 @@
 
 .liChild {
     margin-bottom: 3px;
+}
+
+@media (max-width: 1280px) {
+    .containerFooter {
+        width: 90%;
+    }
+}
+
+@media (max-width: 980px) {
+    .containerFooter {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .sectionFooter {
+        height: auto;
+        padding: 20px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .containerFooter {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
 }

@@ -33,3 +33,9 @@
     }
     
 }
+
+@media (max-width: 480px) {
+    .container-search {
+        padding-bottom: 35rem;
+    }
+}
